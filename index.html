@@ -5,23 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Comensanas · Nutrición con Ruth Rodrigo</title>
   <meta name="description" content="Dietista en Valencia y Llíria. Planes de nutrición personalizados, Rutas Saludables, presoterapia y láser. Más de 20 años acompañando a pacientes.">
+  <meta property="og:title" content="Comensanas · Nutrición con Ruth Rodrigo">
+  <meta property="og:description" content="Planes de nutrición personalizados en Valencia y Llíria.">
+  <meta property="og:image" content="img/ruth.webp">
+  <link rel="icon" href="img/logo-comensanas.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&family=Sacramento&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header class="topbar">
   <div class="wrap topbar__inner">
-    <a href="#inicio" class="logo" aria-label="Comensanas, inicio">Comensanas</a>
+    <a href="#inicio" class="logo" aria-label="Comensanas, inicio">
+      <img src="img/logo-comensanas.webp" alt="Comensanas · Nutrición" width="530" height="147">
+    </a>
     <button class="menu-toggle" aria-expanded="false" aria-controls="menu">Menú</button>
     <nav id="menu" class="nav">
       <a href="#ruth">Ruth</a>
       <a href="#nutricion">Nutrición</a>
       <a href="#rutas">Rutas Saludables</a>
       <a href="#estetica">Estética</a>
-      <a href="#preguntas">Preguntas</a>
+      <a href="#ado">Club ADO</a>
       <a href="#contacto" class="btn btn--small">Pide cita</a>
     </nav>
   </div>
@@ -32,18 +38,24 @@
   <!-- Portada -->
   <section id="inicio" class="hero">
     <div class="wrap hero__inner">
-      <p class="eyebrow">Dietista · Valencia y Llíria</p>
-      <h1>Toma el control de tu salud y tu bienestar</h1>
-      <p class="lead">Planes de nutrición hechos a tu medida, con evidencia científica y un trato cercano. Sin dietas milagro, sin restricciones extremas: hábitos que se quedan contigo.</p>
-      <div class="hero__actions">
-        <a href="#contacto" class="btn">¿Hablamos?</a>
-        <a href="https://wa.me/34629707793" class="btn btn--ghost" target="_blank" rel="noopener">Escríbeme por WhatsApp</a>
+      <div class="hero__text">
+        <p class="eyebrow">Dietista · Valencia y Llíria</p>
+        <h1>Toma el control de tu salud y tu bienestar</h1>
+        <p class="lead">Planes de nutrición hechos a tu medida, con evidencia científica y un trato cercano. Sin dietas milagro, sin restricciones extremas: hábitos que se quedan contigo.</p>
+        <div class="hero__actions">
+          <a href="#contacto" class="btn">¿Hablamos?</a>
+          <a href="https://wa.me/34629707793" class="btn btn--ghost" target="_blank" rel="noopener">Escríbeme por WhatsApp</a>
+        </div>
+        <ul class="hero__facts">
+          <li><strong>+20 años</strong> en consulta privada</li>
+          <li><strong>2 consultas</strong> Valencia y Llíria</li>
+          <li><strong>Enfoque PNI</strong> salud integral</li>
+        </ul>
       </div>
-      <ul class="hero__facts">
-        <li><strong>+20 años</strong> en consulta privada</li>
-        <li><strong>2 consultas</strong> Valencia y Llíria</li>
-        <li><strong>Enfoque PNI</strong> salud integral</li>
-      </ul>
+      <figure class="hero__photo">
+        <img src="img/ruth.webp" alt="Ruth Rodrigo, dietista de Comensanas" width="350" height="500">
+        <figcaption>Ruth Rodrigo<span>Dietista desde 2003</span></figcaption>
+      </figure>
     </div>
   </section>
 
@@ -77,9 +89,14 @@
   <!-- Nutrición -->
   <section id="nutricion" class="section section--tint">
     <div class="wrap">
-      <p class="eyebrow">Consulta</p>
-      <h2>Planes de nutrición personalizados</h2>
-      <p class="section__intro">Cada persona es diferente, y su alimentación también debería serlo. Diseño cada plan teniendo en cuenta tu ritmo de vida, tus gustos, tu estado de salud y tus objetivos.</p>
+      <div class="split split--top">
+        <div>
+          <p class="eyebrow">Consulta</p>
+          <h2>Planes de nutrición personalizados</h2>
+          <p class="section__intro">Cada persona es diferente, y su alimentación también debería serlo. Diseño cada plan teniendo en cuenta tu ritmo de vida, tus gustos, tu estado de salud y tus objetivos.</p>
+        </div>
+        <img class="photo" src="img/consulta.webp" alt="Consulta de nutrición" width="1400" height="896" loading="lazy">
+      </div>
       <div class="grid-3">
         <div class="feature">
           <span class="feature__num">01</span>
@@ -103,22 +120,35 @@
 
   <!-- Rutas Saludables -->
   <section id="rutas" class="section">
-    <div class="wrap split split--reverse">
-      <div class="panel">
-        <h3>Cómo es una jornada</h3>
-        <ol class="steps">
-          <li><strong>Recorrido guiado</strong> al aire libre</li>
-          <li><strong>Sesión formativa</strong> sobre actividad física</li>
-          <li><strong>Taller de nutrición</strong> con almuerzo saludable</li>
-        </ol>
-        <p class="muted">Unas cuatro horas · Para todos los públicos</p>
+    <div class="wrap">
+      <div class="split split--reverse">
+        <div class="panel">
+          <h3>Cómo es una jornada</h3>
+          <ol class="steps">
+            <li><strong>Recorrido guiado</strong> al aire libre</li>
+            <li><strong>Sesión formativa</strong> sobre actividad física</li>
+            <li><strong>Taller de nutrición</strong> con almuerzo saludable</li>
+          </ol>
+          <p class="muted">Unas cuatro horas · Para todos los públicos</p>
+        </div>
+        <div>
+          <p class="eyebrow">Actividad en grupo</p>
+          <h2>Rutas Saludables</h2>
+          <p>Una iniciativa que organizo junto a Ana Peñarrocha, licenciada en Ciencias de la Actividad Física y del Deporte, para unir ejercicio y nutrición en una sola mañana.</p>
+          <p>Caminamos, aprendemos y terminamos con un almuerzo saludable en el que analizamos sus propiedades y hablamos de las tendencias en nutrición. Una forma distinta de cuidarte disfrutando del aire libre.</p>
+          <a href="#contacto" class="link-arrow">Quiero apuntarme a la próxima</a>
+        </div>
       </div>
-      <div>
-        <p class="eyebrow">Actividad en grupo</p>
-        <h2>Rutas Saludables</h2>
-        <p>Una iniciativa que organizo junto a Ana Peñarrocha, licenciada en Ciencias de la Actividad Física y del Deporte, para unir ejercicio y nutrición en una sola mañana.</p>
-        <p>Caminamos, aprendemos y terminamos con un almuerzo saludable en el que analizamos sus propiedades y hablamos de las tendencias en nutrición. Una forma distinta de cuidarte disfrutando del aire libre.</p>
-        <a href="#contacto" class="link-arrow">Quiero apuntarme a la próxima</a>
+
+      <div class="gallery" data-gallery="rutas">
+        <a href="img/rutas-02.webp"><img src="img/rutas-02.webp" alt="Grupo de Rutas Saludables en el camino" loading="lazy" width="800" height="600"></a>
+        <a href="img/rutas-09.webp"><img src="img/rutas-09.webp" alt="Ruth y Ana durante una ruta" loading="lazy" width="750" height="1000"></a>
+        <a href="img/rutas-03.webp"><img src="img/rutas-03.webp" alt="Foto de grupo en el monte" loading="lazy" width="800" height="600"></a>
+        <a href="img/rutas-11.webp"><img src="img/rutas-11.webp" alt="Sesión de ejercicio al aire libre" loading="lazy" width="640" height="480"></a>
+        <a href="img/rutas-07.webp"><img src="img/rutas-07.webp" alt="Participantes de una Ruta Saludable" loading="lazy" width="800" height="600"></a>
+        <a href="img/rutas-01.webp"><img src="img/rutas-01.webp" alt="Descanso del grupo en un merendero" loading="lazy" width="800" height="600"></a>
+        <a href="img/rutas-13.webp"><img src="img/rutas-13.webp" alt="Ruth en una ruta" loading="lazy" width="480" height="640"></a>
+        <a href="img/rutas-05.webp"><img src="img/rutas-05.webp" alt="Grupo al final de la ruta" loading="lazy" width="800" height="600"></a>
       </div>
     </div>
   </section>
@@ -129,45 +159,86 @@
       <p class="eyebrow">Otros servicios</p>
       <h2>Bienestar y estética</h2>
       <div class="grid-3">
-        <article class="card">
-          <h3>Presoterapia</h3>
-          <p>Para mejorar la circulación, el retorno venoso y aliviar las piernas cansadas. Disponible en Llíria los miércoles y jueves, con bono promocional.</p>
-          <a href="#contacto" class="link-arrow">Coge tu cita</a>
+        <article class="card card--media">
+          <a href="img/presoterapia.webp" class="card__img" data-lightbox><img src="img/presoterapia.webp" alt="Presoterapia y drenaje linfático: 5 sesiones por 45 €" loading="lazy" width="1000" height="1000"></a>
+          <div class="card__body">
+            <h3>Presoterapia</h3>
+            <p>Para mejorar la circulación, el retorno venoso y aliviar las piernas cansadas. En Llíria los miércoles y jueves, siempre con bono promocional.</p>
+            <a href="#contacto" class="link-arrow">Coge tu cita</a>
+          </div>
         </article>
-        <article class="card">
-          <h3>Láser</h3>
-          <p>Servicio de láser en las dos consultas, Valencia y Llíria.</p>
-          <a href="#contacto" class="link-arrow">Coge tu cita</a>
+        <article class="card card--media">
+          <div class="card__logo"><img src="img/logo-laser.webp" alt="Loreto AM Láser y más" loading="lazy" width="500" height="350"></div>
+          <div class="card__body">
+            <h3>Láser</h3>
+            <p>Depilación láser en las dos consultas, Valencia y Llíria, con packs por zonas.</p>
+            <div class="gallery gallery--inline" data-gallery="laser">
+              <a href="img/laser-1.webp" class="link-arrow">Ver tarifas</a>
+              <a href="img/laser-2.webp" hidden></a>
+              <a href="img/laser-3.webp" hidden></a>
+              <a href="img/laser-4.webp" hidden></a>
+              <a href="img/laser-5.webp" hidden></a>
+              <a href="img/laser-6.webp" hidden></a>
+            </div>
+            <a href="#contacto" class="link-arrow">Coge tu cita</a>
+          </div>
         </article>
-        <article class="card">
-          <h3>Estética con Maria Fornes</h3>
-          <p>Esteticista desde 1992, con un trato totalmente personalizado, las tecnologías más novedosas y productos de primera calidad.</p>
-          <a href="#contacto" class="link-arrow">Coge tu cita</a>
+        <article class="card card--media">
+          <div class="card__logo"><img src="img/logo-maria-fornes.webp" alt="Maria Fornes, estética inteligente" loading="lazy" width="450" height="64"></div>
+          <div class="card__body">
+            <h3>Estética con Maria Fornes</h3>
+            <p>Esteticista desde 1992, con un trato totalmente personalizado, las tecnologías más novedosas y productos de primera calidad.</p>
+            <a href="#contacto" class="link-arrow">Coge tu cita</a>
+          </div>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- Club ADO + Recetas -->
-  <section class="section">
-    <div class="wrap grid-2">
-      <article class="highlight">
-        <p class="eyebrow">Deporte</p>
-        <h3>Club ADO</h3>
-        <p>Formo parte de la Asociación Deportiva Omnipresente, donde preparo los avituallamientos de meta de sus carreras. Comida sana y rica para recuperar después del esfuerzo.</p>
-        <a href="https://www.facebook.com/COMENSANAS" class="link-arrow" target="_blank" rel="noopener">Ver en Facebook</a>
-      </article>
-      <article class="highlight highlight--green">
-        <p class="eyebrow">Comunidad</p>
-        <h3>Recetitas Comensanas</h3>
-        <p>¿Te ayudamos a cocinar? Únete a nuestro grupo de WhatsApp y recibe ideas de recetas sanas y sencillas para el día a día.</p>
-        <a href="https://chat.whatsapp.com/KGyJkapvf2NINfqFHRROQ2" class="link-arrow" target="_blank" rel="noopener">Unirme al grupo</a>
+  <!-- Club ADO -->
+  <section id="ado" class="section">
+    <div class="wrap">
+      <div class="split">
+        <div>
+          <img class="ado-logo" src="img/logo-ado.webp" alt="ADO, Asociación Deportiva Omnipresente" width="465" height="190" loading="lazy">
+          <h2>Avituallamientos con el Club ADO</h2>
+          <p>Formo parte de la Asociación Deportiva Omnipresente, donde preparo los avituallamientos de meta de sus carreras: fruta, bocadillos y comida sana para recuperar después del esfuerzo.</p>
+          <a href="https://www.facebook.com/COMENSANAS" class="link-arrow" target="_blank" rel="noopener">Ver en Facebook</a>
+        </div>
+        <a href="img/avituallamiento-2.webp" class="feature-photo" data-lightbox>
+          <img class="photo" src="img/avituallamiento-2.webp" alt="Avituallamiento con fruta, bocadillos y agua" width="500" height="400" loading="lazy">
+        </a>
+      </div>
+      <div class="gallery" data-gallery="ado">
+        <a href="img/avituallamiento-4.webp"><img src="img/avituallamiento-4.webp" alt="Ruth en el puesto de avituallamiento" loading="lazy" width="500" height="400"></a>
+        <a href="img/ado-05.webp"><img src="img/ado-05.webp" alt="Corredora celebrando en carrera de montaña" loading="lazy" width="1000" height="973"></a>
+        <a href="img/avituallamiento-3.webp"><img src="img/avituallamiento-3.webp" alt="Mesa de avituallamiento de Comensanas" loading="lazy" width="500" height="400"></a>
+        <a href="img/ado-01.webp"><img src="img/ado-01.webp" alt="Corredor junto a un arco de roca" loading="lazy" width="750" height="1000"></a>
+        <a href="img/ado-11.webp"><img src="img/ado-11.webp" alt="Corredores del club ADO" loading="lazy" width="1000" height="739"></a>
+        <a href="img/ado-07.webp"><img src="img/ado-07.webp" alt="Grupo de corredores en un sendero" loading="lazy" width="1000" height="667"></a>
+        <a href="img/ado-10.webp"><img src="img/ado-10.webp" alt="Podio de una carrera trail" loading="lazy" width="1000" height="750"></a>
+        <a href="img/avituallamiento-5.webp"><img src="img/avituallamiento-5.webp" alt="Ruth en el podio de la carrera" loading="lazy" width="500" height="400"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recetas -->
+  <section class="section section--tint">
+    <div class="wrap">
+      <article class="recipes">
+        <img src="img/cocina.webp" alt="Ingredientes frescos en la cocina" width="800" height="800" loading="lazy">
+        <div class="recipes__body">
+          <p class="eyebrow">Comunidad</p>
+          <h2>Recetitas Comensanas</h2>
+          <p>¿Te ayudamos a cocinar? Únete a nuestro grupo de WhatsApp y recibe ideas de recetas sanas y sencillas para el día a día.</p>
+          <a href="https://chat.whatsapp.com/KGyJkapvf2NINfqFHRROQ2" class="btn" target="_blank" rel="noopener">Unirme al grupo</a>
+        </div>
       </article>
     </div>
   </section>
 
   <!-- Preguntas frecuentes -->
-  <section id="preguntas" class="section section--tint">
+  <section id="preguntas" class="section">
     <div class="wrap narrow">
       <p class="eyebrow">Dudas</p>
       <h2>Preguntas frecuentes</h2>
@@ -191,7 +262,7 @@
   </section>
 
   <!-- Contacto -->
-  <section id="contacto" class="section">
+  <section id="contacto" class="section section--tint">
     <div class="wrap">
       <p class="eyebrow">Contacto</p>
       <h2>Contacta con Ruth</h2>
@@ -237,7 +308,7 @@
 <footer class="footer">
   <div class="wrap footer__inner">
     <div>
-      <span class="logo logo--light">Comensanas</span>
+      <img class="footer__logo" src="img/logo-comensanas.webp" alt="Comensanas" width="530" height="147" loading="lazy">
       <p>Nutrición y bienestar con Ruth Rodrigo</p>
     </div>
     <nav class="footer__social" aria-label="Redes sociales">
@@ -246,12 +317,27 @@
       <a href="https://wa.me/34629707793" target="_blank" rel="noopener">WhatsApp</a>
     </nav>
   </div>
+  <div class="kit-digital">
+    <div class="wrap kit-digital__inner">
+      <img src="img/kit-digital-prtr.webp" alt="Financiado por la Unión Europea, NextGenerationEU · Plan de Recuperación, Transformación y Resiliencia" width="1024" height="273" loading="lazy">
+      <img src="img/kit-digital-ministerio.webp" alt="Gobierno de España, Ministerio para la Transformación Digital y de la Función Pública" width="439" height="115" loading="lazy">
+      <img src="img/kit-digital-3.webp" alt="Kit Digital" width="439" height="115" loading="lazy">
+    </div>
+  </div>
   <div class="wrap footer__legal">
     <p>© <span id="year">2026</span> Comensanas · Ruth Rodrigo</p>
   </div>
 </footer>
 
+<dialog class="lightbox" aria-label="Imagen ampliada">
+  <img alt="">
+  <button class="lightbox__close" aria-label="Cerrar">×</button>
+  <button class="lightbox__prev" aria-label="Anterior">‹</button>
+  <button class="lightbox__next" aria-label="Siguiente">›</button>
+</dialog>
+
 <script>
+  // Menú móvil
   const toggle = document.querySelector('.menu-toggle');
   const nav = document.getElementById('menu');
   toggle.addEventListener('click', () => {
@@ -263,6 +349,36 @@
     toggle.setAttribute('aria-expanded', 'false');
   }));
   document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Visor de imágenes
+  const box = document.querySelector('.lightbox');
+  const boxImg = box.querySelector('img');
+  let set = [], idx = 0;
+  const show = i => {
+    idx = (i + set.length) % set.length;
+    const a = set[idx];
+    boxImg.src = a.getAttribute('href');
+    boxImg.alt = a.querySelector('img')?.alt || '';
+    box.classList.toggle('is-single', set.length < 2);
+  };
+  document.querySelectorAll('[data-gallery] a, a[data-lightbox]').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      const g = a.closest('[data-gallery]');
+      set = g ? [...g.querySelectorAll('a')] : [a];
+      show(set.indexOf(a));
+      box.showModal();
+    });
+  });
+  box.querySelector('.lightbox__close').onclick = () => box.close();
+  box.querySelector('.lightbox__prev').onclick = () => show(idx - 1);
+  box.querySelector('.lightbox__next').onclick = () => show(idx + 1);
+  box.addEventListener('click', e => { if (e.target === box) box.close(); });
+  document.addEventListener('keydown', e => {
+    if (!box.open) return;
+    if (e.key === 'ArrowLeft') show(idx - 1);
+    if (e.key === 'ArrowRight') show(idx + 1);
+  });
 </script>
 </body>
 </html>
